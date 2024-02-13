@@ -18,4 +18,20 @@ APP_TIMEZONE='UTC'
 5. Entry your outlet & company profile with user access
 6. enjoy
 
+openPOS is open source POS and integrated accounting apps and Mobile App, will be host at https://myposku.id 
+
 Feel free to contact me. EFS
+
+## Feature
+
+1. Multi Outlet
+2. Multi User
+3. Ingradiant Support
+4. Print Server Management (Kitchen Printer, Bar Printer)
+5. Table Order Management
+6. Customer Loyality Program
+7. Promos
+8. Create Different menu every Outlet such as "Special Menus" every single outlet.
+9. QRIS payments autoposting to finance department every success payments.
+
+## 
