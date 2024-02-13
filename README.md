@@ -1,4 +1,6 @@
-<p align="center"><a href="https://laravel.com" target="_blank"><img src="https://github.com/vm0993/fic14-openpos/public/images/coffee.png" width="400" alt="Laravel Logo"></a></p>
+<p align="center">
+    ![alt text](https://github.com/vm0993/fic14-openpos/blob/main/coffee.png?raw=true)
+</p>
 
 
 ## About openPOS
