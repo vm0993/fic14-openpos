@@ -1,5 +1,5 @@
 <p align="center">
-    ![alt text](https://github.com/vm0993/fic14-openpos/blob/main/coffee.png?raw=true)
+    ![alt text](https://github.com/vm0993/fic14-openpos/blob/main/public/images/coffee.png?raw=true)
 </p>
 
 
