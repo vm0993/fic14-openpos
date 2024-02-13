@@ -1,0 +1,465 @@
+html,body {
+	background-color: #FFFFFF;
+	margin: 0;
+	padding: 0;
+	position: relative;
+}
+
+.kwitansi {
+	width: 240mm;
+	height: 139mm;
+	font-size: 100%;
+	/*overflow: hidden;*/
+}
+
+.logo {
+	float: left;
+	margin: 1px 2em 2px 2px;
+	width: 1.5cm;
+}
+
+.header {
+	margin: 5mm 10mm;
+	font-family: serif;
+	font-size: 10pt;
+	line-height: 1em;
+}
+
+.header h1 {
+	font-family: serif;
+	font-size: 1.3em;
+	margin: 0.2em 0;
+}
+
+.header h2 {
+	font-family: serif;
+	font-size: 1.8em;
+	margin: 0.3em 0;
+}
+
+.header h3 {
+	font-family: serif;
+	font-size: 1.0em;
+	font-weight: normal;
+	margin: 0.3em 0;
+}
+
+.header p {
+	margin: 0.1em 0;
+}
+
+.header hr {
+	clear: both;
+	border: 1px solid #000000;
+}
+
+.content {
+	margin: 5mm 10mm;
+	font-family: serif;
+	font-size: 10pt;
+	line-height: 1em;
+	position: relative;
+}
+
+.box {
+    width: 240mm;
+	height: 139mm;
+    /*overflow: hidden;*/
+    resize: none;
+    /*display: grid;*/
+    /*border-image: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAFQAAABUCAYAAAAcaxDBAAAAAXNSR0IArs4c6QAAAgVJREFUeF7t3cFuwyAURFHn/z86VXYBR74ZMVLScLssD1wfMIw37u04/9xf/O75V7epfa7/9faZZ7jf+eYfxYKOZJGHoOcFRE+YK3QSIDBqR1DaA2FL3b558HvMhqBra0LQNb9Tb0E/DRrFhje2ENpivq398hCa7/edPVTQkfQyBQh6HEsxyRXKqWbpiXz1pjTvGbSnlff4rxsuun9Bef4EZaOoQtCIi4tj0KgDX3+7Ct+UylMuqKBlgfJwpxVK4+++x0b3bw6l5cRvVsMIggrKAuWK+JGPOpT/2F8YzthUnkVBBS0LlIczh4ag0RljbGJdQdkoqhA04uLiGDTqwNffrsLYVJ5yQQUtC5SHM4eGoNEZYw5lXUHZKKoQNOLi4hg06sDX367C2FSeckEFLQuUhzOHhqDRGWMOZV1B2SiqEDTi4uIYNOrA19+uwthUnnJBBS0LlIczh4ag0RljDmVdQdkoqhA04uLiGDTqwNffrsLYVJ5yQQUtC5SHM4eGoNEZYw5lXUHZKKoQNOLi4hg06sDX367C2FSeckEFLQuUhzOHhqDRGWMOZV1B2SiqEDTi4uIYlDrM7fOfQF83/O/t0f36uUs/d4kf4U6fOHqCXKGTAIFRex2Ut+29K3z1LM+/oIKWBcrD4bv87rlz6ZDy3//wt+2iBSaooPghf3pkV9svc+kfSQIgOJ2A3PIAAAAASUVORK5CYII=") 18 /  18px / 0 round;
+    border-width: 18pt;
+    border-style: solid; */
+}
+
+td span{
+    padding-left: 4px;
+    -webkit-transform: rotate(-90deg);
+    -moz-transform: rotate(-90deg);
+    -ms-transform: rotate(-90deg);
+    -o-transform: rotate(-90deg);
+    transform: rotate(-90deg);
+    writing-mode: tb-rl;
+    /* writing-mode: vertical-rl; */
+    /* width: 100%; */
+    vertical-align: middle;
+    text-align: center;
+    font-size: 10pt;
+    font-weight: bold;
+    font-family: serif;
+}
+
+/* td {
+    border: 1px black solid;
+    padding: 2px;
+}
+ */
+.rotate {
+    padding-left: 0px;
+    -moz-transform: rotate(-180.0deg);
+    /* Opera 10.5 */
+    -o-transform: rotate(-180.0deg);
+    /* Saf3.1+, Chrome */
+    -webkit-transform: rotate(-180.0deg);
+    /* IE6,IE7 */
+    filter: progid: DXImageTransform.Microsoft.BasicImage(rotation=0.083);
+    /* IE8 */
+    -ms-filter: "progid:DXImageTransform.Microsoft.BasicImage(rotation=0.083)";
+    /* Standard */
+    transform: rotate(-180.0deg);
+    writing-mode: tb-rl;
+    /* writing-mode: vertical-rl; */
+    height: 100mm;
+    width: 14mm;
+    white-space: nowrap;
+    vertical-align: middle;
+    text-align: center;
+    font-size: 10pt;
+    /* font-weight: bold; */
+    line-height:5.4mm;
+    border:2px solid #000000;
+    font-family:serif;
+}
+
+.rotate div {
+    -moz-transform: rotate(90.0deg);  /* FF3.5+ */
+    -o-transform: rotate(90.0deg);  /* Opera 10.5 */
+    -webkit-transform: rotate(90.0deg);  /* Saf3.1+, Chrome */
+    margin-left: -72pt;
+    margin-right: -72pt;
+}
+
+.table {
+    display: table;
+}
+
+.row {
+    display: table-row;
+}
+
+.cell {
+    display: table-cell;
+}
+
+.row,
+.cell {
+    padding: 10px;
+}
+
+.address{
+    padding: 4px;
+    width: 24mm;
+    height: 151.6mm;
+    margin: 1px;
+    /* text-align: center;
+    font-size: 10pt;
+    font-weight: bold;
+    font-family: serif; */
+    border: 1.5px solid #000000;
+}
+
+.kwitansi-besar{
+    font-size: 42pt;
+    font-weight: bold;
+    text-align: center;
+    font-family: serif;
+    padding-top:34px;
+}
+
+.header-kwitansi-logo{
+    width: 190mm;
+    height: 20mm;
+    top: inherit;
+    border: 2px solid #000000;
+    padding-top: 10px;
+}
+
+.content-kwitansi{
+    float: left;
+    width: 190mm;
+    height: 120mm;
+    border: 2px solid #000000;
+    margin-top: 6px;
+}
+
+.full-flex{
+    width: 100%;
+}
+
+.nomer{
+    padding: 2px;
+    margin: 2px;
+    display: inline-block;
+    font-size: 12pt;
+    vertical-align: middle;
+    height: 6mm;
+    width: 76mm;
+    border: 1px solid #000000;
+}
+
+.diterima{
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 2px;
+    margin: 2px;
+    width: 40mm;
+    display: inline-block;
+    font-size: 12pt;
+    vertical-align: middle;
+}
+
+.firstRow{
+    padding-top: 2px;
+    padding-bottom: 2px;
+    padding-left: 2px;
+    margin: 2px;
+    width: 40mm;
+    display: inline-block;
+    font-size: 12pt;
+    vertical-align: middle;
+}
+
+.banyaknya{
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 2px;
+    display:contents;
+    width: 40mm;
+    margin: 2px;
+    font-size: 12pt;
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.pembayaran {
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 2px;
+    display:contents;
+    width: 40mm;
+    height: 16mm;
+    margin: 2px;
+    font-size: 12pt;
+    display: inline-block;
+    vertical-align: top;
+}
+
+.content-pembayaran{
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 2px;
+    padding-right: 6px;
+    line-height:5mm;
+    width: 110mm;
+    height: 16mm;
+    margin: 2px;
+    font-size: 12pt;
+    text-align: justify;
+    display:flex;
+    vertical-align:text-top;
+}
+
+.footer-city{
+    float: right;
+    padding-bottom: 2px;
+    padding-left: 2px;
+    margin: 2px;
+    font-size: 12pt;
+    text-align: left;
+    display:table-row;
+    vertical-align: middle;
+    font-family: serif;
+}
+
+.footer-kwitansi{
+    height: 20mm;
+    width: 170mm;
+    position: absolute;
+    bottom: 0;
+    padding-bottom: 2px;
+}
+
+.nilai-angka{
+    width: 70mm;
+    float:left;
+    bottom: 14px;
+    padding-left: 180px;
+    -ms-transform: skewX(-20deg); /* Support untuk IE 9 */
+    -webkit-transform: skewX(-20deg); /* support untuk Safari */
+    transform: skewX(-20deg);
+}
+
+.jajaran-genjang {
+    margin: 2px;
+    float:left;
+    margin-left: 160px;
+    padding-left: 10px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    text-align: center;
+    font-size: 14pt;
+    font-weight: bold;
+    margin-right: 10px;
+    width: 40mm;
+    margin-bottom: 6px;
+    border: 1.5px solid #000000;
+    -ms-transform: skewX(-40deg); /* Support untuk IE 9 */
+    -webkit-transform: skewX(-40deg); /* support untuk Safari */
+    transform: skewX(-40deg); /* default syntax */
+}
+
+.terbilang-angka{
+    width: 90mm;
+    float: left;
+    padding-top: 0px;
+    padding-bottom: 10px;
+    position: absolute;
+    margin-top: 0px;
+    font-size: 14pt;
+    font-style: italic;
+    bottom: 6px;
+    font-weight: bold;
+}
+
+.block-terbilang{
+    width: 90mm;
+    float: left;
+    padding-top: 10px;
+    padding-bottom: 0px;
+    margin: 10px;
+    position: relative;
+    bottom: 0;
+    border-top: 1.5px solid #000000;
+    border-bottom: 1.5px solid #000000;
+}
+
+.sign-name{
+    float: right;
+    padding-top: 38px;
+    padding-bottom: 4px;
+    padding-left: 2px;
+    margin: 2px;
+    width: 52mm;
+    font-size: 12pt;
+    text-align: left;
+    display:table-row;
+    vertical-align: middle;
+    border-bottom: 1.5px solid #000000;
+    font-family: serif;
+}
+
+.sign-position{
+    float: right;
+    padding-top: 42px;
+    padding-bottom: 4px;
+    margin-top:3px;
+    margin-left: 22px;
+    width: 52mm;
+    font-size: 12pt;
+    text-align: left;
+    display:table-row;
+    vertical-align: middle;
+    font-family: serif;
+}
+
+.background-duit{
+    background-image: radial-gradient( grey 20%, transparent 20%),
+        radial-gradient(#fafafa 20%, transparent 20%);
+    background-color: rgba(220, 220, 220, 0.526);
+    background-position: 0 0, 20px 20px;
+    background-size: 6px 6px;
+    background-repeat: repeat;
+}
+
+.divider{
+    padding-left: 1px;
+    display: inline-block;
+}
+
+.right-content{
+    float: left;
+    padding-top: 10px;
+    margin-left: 50px;
+    padding-bottom:10px;
+    text-align: left;
+    width: 140mm;
+    vertical-align: middle;
+    display:table-row;
+    margin: 2px;
+    font-size: 12pt;
+    hyphens: auto;
+}
+
+.clearfix:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+#company {
+    float: right;
+    padding-left: 100px;
+    text-align: center;
+    transform: rotate(180deg);
+}
+
+#alamat {
+    padding-left: 6px;
+    float: left;
+}
+
+.table{
+    padding-top: 10px;
+    font-size: 12pt;
+}
+.table-list {
+	border: none;
+	border-collapse: collapse;
+	padding: 0.1em 0.3em;
+}
+
+.table-list th {
+	text-align: left;
+	padding: 0.2em 0.3em;
+}
+
+.table-list td {
+	text-align: left;
+	padding: 0.2em 0.3em;
+}
+
+.table-list .total {
+	border-top: 1px solid #000000;
+	border-bottom: 2px solid #000000;
+	padding: 0.5em 0.3em;
+}
+
+.siganture {
+	margin: 0.5cm 0px 0px 0px;
+}
+
+.siganture table {
+	width: 100%;
+	border: none;
+	cell-collapse: collapse;
+}
+
+.siganture table td {
+	text-align: center;
+}
+
+.left {
+	float: left;
+}
+
+.center{
+    float:none;
+}
+
+.right {
+	float: right;
+}
+
+.align-right {
+	text-align: center;
+}

@@ -1,0 +1,251 @@
+@font-face {
+    font-family: SourceSansPro;
+    src: url(SourceSansPro-Regular.ttf);
+}
+
+.clearfix:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+a {
+    color: #0087C3;
+    text-decoration: none;
+}
+
+.a5 {
+    width: 210mm;
+    height: 148mm;
+}
+
+.a4landscape{
+    width: 297mm;
+    height: 210mm;
+}
+
+.lead {
+    font-family: Arial, sans-serif;
+    font-weight: bold;
+}
+.value {
+    font-family:Arial, sans-serif;
+}
+.value-big {
+    font-family: Arial, sans-serif;
+    font-weight: bold;
+    font-size: large;
+}
+
+body {
+    position: relative;
+    margin: 0 auto;
+    color: #555555;
+    background: #FFFFFF;
+    font-family: Arial, sans-serif;
+    font-size: 14px;
+    font-family: SourceSansPro;
+}
+
+header {
+    padding: 5px 0;
+    margin-bottom: 10px;
+    border-bottom: 1px solid #AAAAAA;
+}
+
+#logo {
+    float: left;
+    margin-top: 2px;
+}
+
+#logo img {
+    height: 90px;
+}
+
+#company {
+    float: right;
+    text-align: right;
+}
+
+#details {
+    margin-bottom: 50px;
+}
+
+#client {
+    padding-left: 6px;
+    /*border-left: 6px solid #0087C3;*/
+    float: left;
+}
+
+#contentLeft {
+    padding-left: 6px;
+    /*border-left: 6px solid #0087C3;*/
+    float: left;
+    width: 160px;
+}
+
+#contentCenter {
+    padding-left: 2px;
+    /*border-left: 6px solid #0087C3;*/
+    float: left;
+}
+
+#contentRight {
+    padding-left: 4px;
+    /*border-left: 6px solid #0087C3;*/
+    float: left;
+}
+
+#reportTitle {
+    padding-left: 6px;
+    float: left;
+}
+
+#reportTitle .to {
+    color: #777777;
+}
+
+#reportTitle .name {
+    font-size: 1.1em;
+    font-stretch: normal;
+    margin: 0;
+}
+
+#client .to {
+    color: #777777;
+}
+
+h3{
+    margin-top:2px;
+    margin-bottom:2px;
+}
+
+h2.name {
+    font-size: 1.2em;
+    font-weight: normal;
+    margin: 0;
+}
+
+#invoice {
+    float: right;
+    text-align: right;
+}
+
+#invoice h1 {
+    color: #0087C3;
+    font-size: 1.2em;
+    line-height: 1em;
+    font-weight: normal;
+    margin: 0  0 10px 0;
+}
+
+#invoice .date {
+    font-size: 1.1em;
+    color: #777777;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    border-spacing: 0;
+    margin-bottom: 30px;
+}
+
+table th,
+table td {
+    text-align: left;
+}
+
+table th {
+    padding: 5px 5px;
+    /*color: #5D6975;*/
+    white-space: nowrap;
+    font-weight: normal;
+}
+
+table tbody {
+    background: #FFFFFF;
+}
+
+table tbody tr {
+    white-space: nowrap;
+    font-weight: normal;
+}
+
+
+table .note {
+    text-align: left;
+}
+
+table .service,
+table .desc,
+table .memo {
+    text-align: left;
+}
+
+table td {
+    padding: 3px;
+    text-align: right;
+}
+table td.no {
+    vertical-align: top;
+    text-align: center;
+}
+table td.desc,
+table td.memo  {
+    vertical-align: center;
+    text-align: left;
+}
+
+table td.unit,
+table td.qty,
+table td.total {
+    vertical-align: top;
+}
+
+table td.sub {
+    border-top: 1px solid #C1CED9;
+}
+
+table td.grand {
+    border-top: 1px solid #5D6975;
+}
+
+#details {
+    margin-bottom: 7px;
+}
+
+#thanks{
+    font-size: 2em;
+    margin-bottom: 50px;
+}
+
+#notices{
+    padding-left: 6px;
+    border-left: 6px solid #0087C3;
+}
+
+#notices .notice {
+    font-size: 1.2em;
+}
+
+footer {
+    color: #777777;
+    width: 100%;
+    height: 20px;
+    position: absolute;
+    bottom: 0;
+    border-top: 1px solid #AAAAAA;
+    padding: 3px 0;
+    text-align: center;
+}
+
+.kotakin {
+    padding: 4px;
+    margin: 4px;
+    border: 1px solid #000000;
+}
+
+.full-flex{
+    width: 100%;
+}

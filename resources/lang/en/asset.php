@@ -1,0 +1,25 @@
+<?php
+
+return [
+    'title'                => 'Fixed&nbsp;Asset&nbsp;Lists',
+    'add-title'            => 'New Asset',
+    'edit-title'           => 'Edit Asset',
+    'asset_date'           => 'Asset&nbsp;Date',
+    'asset_no'             => 'Asset&nbsp;No',
+    'name'                 => 'Asset&nbsp;Name',
+    'asset_type'           => 'Asset&nbsp;Type',
+    'select_asset_type'    => 'Select&nbsp;Asset&nbsp;Type',
+    'asset_qty'            => 'Qty',
+    'asset_amount'         => 'Amount',
+    'asset_balance'        => 'Asset&nbsp;Balance',
+    'asset_account'        => 'Asset&nbsp;Account',
+    'depreciation_account' => 'Depreciation&nbsp;Account',
+    'expense_account'      => 'Expense&nbsp;Account',
+    'cashbank_account'     => 'Cash/Bank&nbsp;Account',
+    'asset_depreciation'   => 'Depreciation&nbsp;Method',
+    'asset_life'           => 'Asset&nbsp;Life',
+    'select_asset_account' => 'Select&nbsp;Asset&nbsp;Account',
+    'select_depreciation'  => 'Select&nbsp;Depreciation&nbsp;Account',
+    'select_expense_account' => 'Select&nbsp;Expense&nbsp;Account',
+    'select_cashbank_account' => 'Select&nbsp;Cash/Bank&nbsp;Account',
+];

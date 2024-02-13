@@ -1,0 +1,315 @@
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro&display=swap');
+
+.clearfix:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+main{
+  height: 150mm;
+}
+
+.wrap-longtext
+{
+word-break: break-all;/* Use break-word, if you prefer sensible text than short width of the cell */
+white-space: pre-wrap;
+}
+
+.bg-wrapper {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+}
+.bg-wrapper body {
+  width: 100%;
+  height: 100%;
+}
+.bg-wrapper main {
+  display: none;
+  background-image: url('../images/d740d41511d4fdc0c74fdb73236e5d2b.jpg') no-repeat;
+}
+
+table thead {
+  display: table-row-group;
+}
+
+.container {
+  min-height:100%;
+  position:relative;
+}
+
+a {
+  color: #0087C3;
+  text-decoration: none;
+}
+
+.a4 {
+  width: 210mm;
+  height: 297mm;
+}
+.a4landscape{
+  width: 297mm;
+  height: 210mm;
+}
+
+.center-text{
+  filter: grayscale(100%);
+  position: absolute;
+  text-align: center;
+  font-size: xx-large;
+  font-weight: bolder;
+  transform: rotate(-65deg);
+  -webkit-transform: rotate(-65deg);
+  /* Firefox */
+  -moz-transform: rotate(-65deg);
+  /* IE */
+  -ms-transform: rotate(-65deg);
+  /* Opera */
+  -o-transform: rotate(-65deg);
+  top: 50%;
+  left: 50%;
+  color: #c0c0c0fb;
+}
+
+body {
+  position: relative;
+  margin: 0 auto;
+  color: #555555;
+  background: #FFFFFF;
+  font-family: 'Source Sans Pro', sans-serif;
+  font-size: 14px;
+}
+
+header {
+  padding: 5px 0;
+  margin-bottom: 10px;
+  border-bottom: 1px solid #AAAAAA;
+}
+
+#logo {
+  float: left;
+  margin-top: 8px;
+}
+
+#logo img {
+  height: 70px;
+}
+
+#company {
+  float: right;
+  text-align: right;
+}
+
+
+#details {
+  margin-bottom: 50px;
+}
+
+#client {
+  padding-left: 6px;
+  /*border-left: 6px solid #0087C3;*/
+  float: left;
+}
+
+#reportTitle {
+  padding-left: 6px;
+  float: left;
+}
+
+#reportTitle .to {
+  color: #777777;
+}
+
+#reportTitle .name {
+  font-size: 1.1em;
+  font-stretch: normal;
+  margin: 0;
+}
+
+#client .to {
+  color: #777777;
+}
+
+h3{
+  margin-top:2px;
+  margin-bottom:2px;
+}
+
+h2.name {
+  font-size: 1.2em;
+  font-weight: normal;
+  margin: 0;
+}
+
+#invoice {
+  float: right;
+  text-align: right;
+}
+
+#invoice h1 {
+  color: #0087C3;
+  font-size: 1.2em;
+  line-height: 1em;
+  font-weight: normal;
+  margin: 0  0 10px 0;
+}
+
+#invoice .date {
+  font-size: 1.1em;
+  color: #777777;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  border-spacing: 0;
+  margin-bottom: 30px;
+}
+
+table th,
+table td {
+  text-align: center;
+}
+
+table th {
+  padding: 5px 5px;
+  /*color: #5D6975;*/
+  border-bottom: 1px solid #C1CED9;
+  white-space: nowrap;
+  font-weight: normal;
+}
+
+table tbody {
+  background: #FFFFFF;
+}
+
+table tbody tr {
+  border-bottom: 1px solid #C1CED9;
+  white-space: nowrap;
+  font-weight: normal;
+}
+
+table .service,
+table .desc,
+table .memo {
+  text-align: left;
+}
+
+table td {
+  padding: 3px;
+  text-align: right;
+}
+table td.no {
+  vertical-align: top;
+  text-align: center;
+  width: 14px;
+}
+table td.service,
+table td.desc,
+table td.memo  {
+  vertical-align: center;
+  text-align: left;
+}
+
+table td.unit,
+table td.qty,
+table td.total {
+  vertical-align: top;
+}
+
+table td.unit {
+  width: 100px;
+}
+
+table td.sub {
+  border-top: 1px solid #C1CED9;
+}
+
+table td.grand {
+  border-top: 1px solid #5D6975;
+}
+
+#details {
+  margin-bottom: 7px;
+}
+
+#thanks{
+  font-size: 2em;
+  margin-bottom: 50px;
+}
+
+#notices{
+  padding-left: 2px;
+  /*border-left: 0px solid #0087C3;  */
+}
+
+#notices .notice {
+  font-size: 1.2em;
+}
+
+/* footer {
+  color: #777777;
+  width: 100%;
+  height: 20px;
+  position: absolute;
+  bottom: 0;
+  border-top: 1px solid #AAAAAA;
+  padding: 3px 0;
+  text-align: center;
+} */
+
+footer {
+  color: #777777;
+  width: 100%;
+  position: absolute;
+  bottom: 0;
+  padding: 3px 0;
+  text-align: left;
+}
+
+.pagebreak{
+  page-break-after: always;
+  page-break-before: always;
+}
+
+@page:first {
+margin-top: 0;
+}
+
+@page {
+margin: 0;
+padding: 0;
+}
+/* @page {
+  counter-increment: page;
+  margin-left: 0;
+  margin-right: 0;
+  padding: 0;
+
+  @bottom-center {
+    color: #666;
+    content: counter(page) "/" counter(pages);
+    font: normal 9pt Arial, Helvetica, sans-serif;
+  }
+
+}*/
+
+/**
+ * Remove default `margin` from the top of the first invoice page, as most
+ * themes include an image or border
+ */
+/*
+.pagebreak{
+    page-break-after: always;
+    page-break-before: always;
+}
+
+@page:first {
+  margin-top: 0;
+}
+
+@page {
+  margin: 0;
+  padding: 0;
+} */

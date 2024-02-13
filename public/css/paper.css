@@ -1,0 +1,359 @@
+@page {
+    margin: 0
+}
+
+body {
+    margin: 0
+}
+
+/*body {
+  position: relative;
+  width: 210mm;
+  height: 297mm;
+  margin: 0 auto;
+  color:#000;
+  background: #FFFFFF;
+  font-family: Arial, sans-serif;
+  font-size: 14px;
+  font-family: SourceSansPro;
+}*/
+.sheet {
+    margin: 0;
+    overflow: hidden;
+    position: relative;
+    /*box-sizing: border-box;*/
+    page-break-after: always;
+}
+
+/** Paper sizes **/
+body.A3 .sheet {
+    width: 297mm;
+    height: 419mm
+}
+
+body.A3.landscape .sheet {
+    width: 420mm;
+    height: 296mm
+}
+
+body.A4 .sheet {
+    width: 210mm;
+    height: 296mm
+}
+
+body.A4.landscape .sheet {
+    width: 297mm;
+    height: 209mm
+}
+
+body.A5 .sheet {
+    width: 148mm;
+    height: 209mm
+}
+
+body.A5.landscape .sheet {
+    width: 210mm;
+    height: 147mm
+}
+
+body.letter .sheet {
+    width: 216mm;
+    height: 279mm
+}
+
+body.letter.landscape .sheet {
+    width: 280mm;
+    height: 215mm
+}
+
+body.legal .sheet {
+    width: 216mm;
+    height: 356mm
+}
+
+body.legal.landscape .sheet {
+    width: 357mm;
+    height: 215mm
+}
+
+/** Padding area **/
+.sheet.padding-10mm {
+    padding: 10mm
+}
+
+.sheet.padding-15mm {
+    padding: 15mm
+}
+
+.sheet.padding-20mm {
+    padding: 20mm
+}
+
+.sheet.padding-25mm {
+    padding: 25mm
+}
+
+/** For screen preview **/
+@media screen {
+    body {
+        background: white
+    }
+
+    .sheet {
+        background: white;
+        margin: 0 auto;
+    }
+
+    tr {
+        padding-top: 1rem;
+        padding-bottom: 1rem;
+    }
+
+    td {
+        vertical-align: top;
+        text-align: left;
+    }
+
+    .clearfix:after {
+        content: "";
+        display: table;
+        clear: both;
+    }
+
+    header {
+        padding: 2px 0;
+    }
+
+    #logo {
+        float: right;
+        text-align: right;
+        margin-top: 8px;
+    }
+
+    #logo img {
+        height: 70px;
+    }
+
+    #details {
+        margin-bottom: 10px;
+    }
+
+    #client {
+        padding-left: 6px;
+        float: left;
+    }
+
+    #invoice {
+        float: right;
+        text-align: left;
+    }
+
+    #invoice .date {
+        font-size: 1.1em;
+        color: #777777;
+    }
+
+    .col {
+        padding: 0.1rem;
+    }
+
+    .align-top {
+        align-items: flex-start;
+    }
+
+    .rata-kiri-kanan {
+        text-align: justify;
+    }
+
+    .rata-kiri {
+        text-align: left;
+    }
+
+    .tandatangan {
+        float: right;
+        text-align: right;
+    }
+
+    .tandakiri {
+        float: left;
+        text-align: right;
+    }
+
+    .align-right {
+        justify-content: flex-end;
+    }
+
+    .rata-tengah {
+        text-align: center;
+    }
+
+    .garis-bawah {
+        text-decoration: underline;
+    }
+
+    .xs-1 {
+        flex: 0 0 2.3%;
+        max-width: 2.3%;
+    }
+
+    .xs-2 {
+        flex: 0 0 16.6666666667%;
+        max-width: 16.6666666667%;
+    }
+
+    .xs-3 {
+        flex: 0 0 25%;
+        max-width: 25%;
+    }
+
+    .xs-4 {
+        flex: 0 0 33.3333333333%;
+        max-width: 33.3333333333%;
+    }
+
+    .xs-5 {
+        flex: 0 0 41.6666666667%;
+        max-width: 41.6666666667%;
+    }
+
+    .xs-6 {
+        flex: 0 0 50%;
+        max-width: 50%;
+    }
+
+    .xs-7 {
+        flex: 0 0 58.3333333333%;
+        max-width: 58.3333333333%;
+    }
+
+    .xs-8 {
+        flex: 0 0 66.6666666667%;
+        max-width: 66.6666666667%;
+    }
+
+    .xs-9 {
+        flex: 0 0 75%;
+        max-width: 75%;
+    }
+
+    .xs-10 {
+        flex: 0 0 83.3333333333%;
+        max-width: 83.3333333333%;
+    }
+
+    .xs-11 {
+        flex: 0 0 91.6666666667%;
+        max-width: 91.6666666667%;
+    }
+
+    .xs-12 {
+        flex: 0 0 100%;
+        max-width: 100%;
+    }
+
+    footer {
+        width: 100%;
+        height: auto;
+        position: absolute;
+        bottom: 0;
+        font-size: 8pt;
+        padding: 3px 0;
+        text-align: left;
+    }
+}
+
+/** Fix for Chrome issue #273306 **/
+@media print {
+    body.A3.landscape {
+        width: 420mm
+    }
+
+    body.A3,
+    body.A4.landscape {
+        width: 297mm
+    }
+
+    body.A4,
+    body.A5.landscape {
+        width: 210mm
+    }
+
+    body.A5 {
+        width: 148mm
+    }
+
+    body.letter,
+    body.legal {
+        width: 216mm
+    }
+
+    body.letter.landscape {
+        width: 280mm
+    }
+
+    body.legal.landscape {
+        width: 357mm
+    }
+}
+
+@media only screen and (min-width: 480px) {
+    .xs-1 {
+        flex: 0 0 2.3%;
+        max-width: 2.3%;
+    }
+
+    .xs-2 {
+        flex: 0 0 16.6666666667%;
+        max-width: 16.6666666667%;
+    }
+
+    .xs-3 {
+        flex: 0 0 25%;
+        max-width: 25%;
+    }
+
+    .xs-4 {
+        flex: 0 0 33.3333333333%;
+        max-width: 33.3333333333%;
+    }
+
+    .xs-5 {
+        flex: 0 0 41.6666666667%;
+        max-width: 41.6666666667%;
+    }
+
+    .xs-6 {
+        flex: 0 0 50%;
+        max-width: 50%;
+    }
+
+    .xs-7 {
+        flex: 0 0 58.3333333333%;
+        max-width: 58.3333333333%;
+    }
+
+    .xs-8 {
+        flex: 0 0 66.6666666667%;
+        max-width: 66.6666666667%;
+    }
+
+    .xs-9 {
+        flex: 0 0 75%;
+        max-width: 75%;
+    }
+
+    .xs-10 {
+        flex: 0 0 83.3333333333%;
+        max-width: 83.3333333333%;
+    }
+
+    .xs-11 {
+        flex: 0 0 91.6666666667%;
+        max-width: 91.6666666667%;
+    }
+
+    .xs-12 {
+        flex: 0 0 100%;
+        max-width: 100%;
+    }
+}

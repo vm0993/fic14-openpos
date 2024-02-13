@@ -1,0 +1,36 @@
+version: '3'
+services:
+  app:
+    image: /mykedai-app:prod
+    container_name: app
+    restart: unless-stopped
+    tty: true
+    env_file: .env
+    depends_on:
+      - cache
+    networks:
+      - mykedai-prod
+
+  web_server:
+    image: /mykedai-web_server:prod
+    container_name: web_server
+    restart: unless-stopped
+    tty: true
+    ports:
+      - "8002:80"
+    depends_on:
+      - app
+    networks:
+      - mykedai-prod
+
+  cache:
+    image: redis:alpine
+    container_name: cache
+    restart: unless-stopped
+    networks:
+      - mykedai-prod
+
+#Docker Networks
+networks:
+  mykedai-prod:
+    driver: bridge
