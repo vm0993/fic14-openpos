@@ -18,4 +18,6 @@ APP_TIMEZONE='UTC'
 5. Entry your outlet & company profile with user access
 6. enjoy
 
+openPOS is open source POS and integrated accounting apps and Mobile App, will be host at https://myposku.id 
+
 Feel free to contact me. EFS
