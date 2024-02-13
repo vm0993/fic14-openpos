@@ -21,6 +21,7 @@ class User extends Authenticatable
         'activated',
         'permission_group_id',
         'pegawai_id',
+        'company_id',
     ];
 
     /**

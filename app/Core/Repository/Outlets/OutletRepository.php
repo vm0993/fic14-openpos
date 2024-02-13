@@ -58,27 +58,6 @@ class OutletRepository implements OutletEmployeeInterface
             $result->update($data);
             return $result;
         }
-        /* return Outlet::updateOrCreate([
-            'id' => $request->id
-        ],
-        [
-            'company_id' => $request->company_id,
-            'code'       => $request->code,
-            'name'       => $request->name,
-            'address'    => $request->address,
-            'phone_no'   => $request->phone_no,
-            'email'      => $request->email,
-        ]); */
-
-        /* $data = [
-            'company_id' => $request->company_id,
-            'code'       => $request->code,
-            'name'       => $request->name,
-            'address'    => $request->address,
-            'phone_no'   => $request->phone_no,
-            'email'      => $request->email,
-        ];
-        return Outlet::create($data); */
     }
 
     public function updateOutlet($request, $id)
