@@ -1,6 +1,6 @@
 <p align="center"><a href="https://myposku.id" target="_blank"><img src="https://github.com/vm0993/fic14-openpos/blob/main/public/images/coffee.ico" width="128" alt="Laravel Logo"></a></p>
 <p align="center">
-    openPOS
+    ## openPOS
 </p>
 
 ## About openPOS
