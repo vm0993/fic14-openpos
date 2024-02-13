@@ -11,7 +11,7 @@
 
 ENV Parameter must be change.
 1. APP_FORCE_TLS=false
-2. APP_ALLOW_INSECURE_HOSTS=true
+2. APP_ALLOW_INSECURE_HOSTS=false
 3. APP_TIMEZONE='UTC'
 
 Step by step
