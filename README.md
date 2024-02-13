@@ -1,4 +1,4 @@
-![alt text](https://github.com/vm0993/fic14-openpos/blob/main/public/images/coffee.png?raw=true)
+![alt text](https://github.com/vm0993/fic14-openpos/blob/main/public/images/coffee.ico?raw=true)
 
 ## About openPOS
 
