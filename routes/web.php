@@ -95,10 +95,6 @@ Route::group(['middleware' => ['auth', 'verified']], function () {
             'group-permissions' => PermissionGroupController::class,
             'user'              => UserController::class,
         ]);
-        Route::post('company/{company_id}/item-default',
-            [CompanyController::class,'storeItemDefault'])->name('company.item-default');
-        Route::post('company/{company_id}/item-default/{id}',
-            [CompanyController::class,'updateItemDefault'])->name('company.update-item-default');
         Route::get('group-permissions/{id}/details',
             [PermissionGroupController::class,'getDetailPermission'])->name('group-permissions.details');
         Route::get('group-permissions/{id}/new-user',
