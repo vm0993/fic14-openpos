@@ -29,8 +29,10 @@ class UserRepository implements UserInterface
             'email'               => $request->email,
             'company_id'          => auth()->user()->company_id,
             'permission_group_id' => $request->group_permission_id,
-            'pegawai_id'          => 0,
+            'pegawai_id'          => $request->pegawai_id,
             'password'            => $request->password,
+            'user_type'           => $request->user_type,
+            'activated'           => 1,
         ];
         return User::create($data);
     }
@@ -42,8 +44,10 @@ class UserRepository implements UserInterface
             'email'               => $request->email,
             'company_id'          => auth()->user()->company_id,
             'permission_group_id' => $request->group_permission_id,
-            'pegawai_id'          => 0,
+            'pegawai_id'          => $request->pegawai_id,
             'password'            => $request->password,
+            'user_type'           => $request->user_type,
+            'activated'           => 1,
         ];
         return User::create($data);
     }
@@ -56,7 +60,9 @@ class UserRepository implements UserInterface
             'email'               => $request->email,
             'company_id'          => auth()->user()->company_id,
             'permission_group_id' => $request->group_permission_id,
-            'pegawai_id'          => 0,
+            'pegawai_id'          => $request->pegawai_id,
+            'user_type'           => $request->user_type,
+            'activated'           => 1,
         ];
         $user->update($data);
         return $user;

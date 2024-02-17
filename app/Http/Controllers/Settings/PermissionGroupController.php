@@ -35,7 +35,8 @@ class PermissionGroupController extends Controller
             return datatables()
             ->of($results)
             ->editColumn('name', function ($data) {
-                return '<a href="javascript:void(0)">
+                $uriEdit = route('settings.group-permissions.edit',['group_permission' => $data['id']]);
+                return '<a href="'.$uriEdit.'">
                     <span class="text-xs text-success whitespace-nowrap ml-4">' .$data->name.'</span>
                 </a>';
             })
@@ -139,32 +140,42 @@ class PermissionGroupController extends Controller
         $title           = 'New Permission';
         $result          = "";
         $permissions     = config('permission');
-        $userPermissions = Helper::selectedPermissionsArray($permissions, []);
-        $permissions     = $this->filterDisplayable($permissions);
-        $varArray        = [];
-        //dd($permissions);
-        foreach ($userPermissions as $key => $permissionArray) {
-            $varArray[]  = [
-               $key => $key == 'admin' || $key == 'cashier' || $key == 'waiter' ? 0 : 1,
-            ];
+        $groupPermissions = Helper::selectedPermissionsArray($permissions, $permissions);
+        //$permissions     = $this->filterDisplayable($permissions);
+
+        return view('settings.permissions.create',compact('title','result','groupPermissions','permissions'));
+    }
+
+    public function store(Request $request)
+    {
+        DB::beginTransaction();
+        try {
+            $this->permission->createPermissionGroup($request);
+            DB::commit();
+            $notification = array(
+                'message' => 'Group Permission successfull to saved!',
+                'alert-type' => 'success'
+            );
+            return redirect()->route('settings.group-permissions.index')->with($notification);
+        } catch (\Throwable $th) {
+            DB::rollBack();
+            $notification = array(
+                'message' => 'User failed to saved!',
+                'alert-type' => 'error'
+            );
+            return redirect()->back()->with($notification);
         }
+    }
 
-        /* foreach ($permissions as $key => $permissionArray) {
-            if(count($permissionArray) == 1){
-                $localPermission = $permissionArray[0];
-                $varArray[]  = [
-                    $localPermission['permission'] => $localPermission['permission'] == 'admin' || $localPermission['permission'] == 'cashier' || $localPermission['permission'] == 'waiter' ? 0 : 1,
-                ];
-            }else{
-                $localPermission = $permissionArray[0];
-                $varArray[]  = [
-                    $localPermission['permission'] => $localPermission['permission'] == 'admin' || $localPermission['permission'] == 'cashier' || $localPermission['permission'] == 'waiter' ? 0 : 1,
-                ];
-            }
-        } */
-
-        dd(json_encode($varArray));
-        return view('settings.permissions.create',compact('title','result'));
+    public function edit($id)
+    {
+        $title            = 'Edit Permission';
+        $result           = $this->permission->findPermissionGroupById($id);
+        $permissions      = config('permission');
+        $groupPermissions = $result->permission;
+        $selected_array   = Helper::selectedPermissionsArray($permissions, $result->permission);
+        //dd($groupPermissions);
+        return view('settings.permissions.create',compact('title','result','groupPermissions','permissions','selected_array'));
     }
 
     private function filterDisplayable($permissions)

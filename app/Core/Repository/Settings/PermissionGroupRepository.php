@@ -31,9 +31,10 @@ class PermissionGroupRepository implements PermissionGroupInterface
 
     public function createPermissionGroup($request)
     {
+        $permission = json_encode($request->input('permission'));
         $data = [
-            'name' => $request->name,
-            'permission' => json_encode($request->permission),
+            'name'       => $request->name,
+            'permission' => json_decode($permission),
         ];
         $result = PermissionGroup::create($data);
         return $result;
@@ -42,9 +43,10 @@ class PermissionGroupRepository implements PermissionGroupInterface
     public function updatePermissionGroup($request, $id)
     {
         $result = PermissionGroup::find($id);
+        $permission = json_encode($request->input('permission'));
         $data = [
-            'name' => $request->name,
-            'permission' => json_encode($request->permission),
+            'name'       => $request->name,
+            'permission' => json_decode($permission),
         ];
         $result->update($data);
         return $result;

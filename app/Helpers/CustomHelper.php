@@ -66,7 +66,20 @@ function getUserTypes()
 {
     $arrayData = [
         'superuser' => 'Super User',
-        'admin'  => 'Admin',
+        'admin'     => 'Admin',
+        'cashier'   => 'Cashier',
+        'waiter'    => 'Waiter',
+    ];
+    return $arrayData;
+}
+
+function getTableType()
+{
+    $arrayData = [
+        'round'     => 'Round',
+        'rectangle' => 'Rectangle',
+        'oval'      => 'Oval',
+        'square'    => 'Square',
     ];
     return $arrayData;
 }

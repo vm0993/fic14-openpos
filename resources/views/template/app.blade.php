@@ -71,6 +71,20 @@
             });
         });
 
+        var inputElements = document.querySelectorAll("input[data-format]");
+        inputElements.forEach(input => {
+            let m = new IMask(input, {
+                mask: input.getAttribute("data-format"),
+            });
+        });
+
+        var inputElements = document.querySelectorAll("input[data-format]");
+        inputElements.forEach(input => {
+            let m = new IMask(input, {
+                mask: input.getAttribute("data-format"),
+            });
+        });
+
         @if(Session::has('message'))
             var type = "{{ Session::get('alert-type', 'info') }}";
             toastr.options = {

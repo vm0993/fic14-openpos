@@ -88,7 +88,7 @@ New
                                                 type="text"
                                                 data-format="00-00-0000"
                                                 placeholder="dd-mm-yyyy"
-                                                class="form-control date"
+                                                class="form-control"
                                                 name="transaction_date"
                                                 @if(!empty($result))
                                                 value="{{ \Carbon\Carbon::parse($result['transaction_date'])->format('d-m-Y') }}"
