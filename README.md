@@ -1,4 +1,4 @@
-<p align="center"><a href="https://myposku.id" target="_blank"><img src="https://github.com/vm0993/fic14-openpos/blob/main/public/images/coffee.ico" width="400" alt="Laravel Logo"></a></p>
+<p align="center"><a href="https://myposku.id" target="_blank"><img src="https://github.com/vm0993/fic14-openpos/blob/main/public/images/coffee.ico" width="128" alt="Laravel Logo"></a></p>
 <p align="center">
     openPOS
 </p>
@@ -10,9 +10,11 @@
 ## Installation Guide
 
 ENV Parameter must be change.
-APP_FORCE_TLS=false
-APP_ALLOW_INSECURE_HOSTS=true
-APP_TIMEZONE='UTC'
+1. APP_FORCE_TLS=false
+2. APP_ALLOW_INSECURE_HOSTS=false
+3. APP_TIMEZONE='UTC'
+
+Step by step
 
 1. Create database first
 2. Setup ENV for Database section
