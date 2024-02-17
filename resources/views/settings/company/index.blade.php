@@ -160,17 +160,7 @@ Company Profile ::
                                                         name="service_charges_account_id"
                                                         id="service_charges_account_id">
                                                         <option value="">Select Service Charge Account</option>
-                                                        @foreach (getAccountByType(9) as $sc)
-                                                            @if(!empty($result))
-                                                                @if($sc->id == $result['service_charges_account_id'])
-                                                                    <option value="{{ $sc->id }}" selected>{{ $sc->accountFull }}</option>
-                                                                @else
-                                                                    <option value="{{ $sc->id }}">{{ $sc->accountFull }}</option>
-                                                                @endif
-                                                            @else
-                                                            <option value="{{ $sc->id }}">{{ $sc->accountFull }}</option>
-                                                            @endif
-                                                        @endforeach
+
                                                     </select>
                                                 </div>
                                             </div>
@@ -197,17 +187,7 @@ Company Profile ::
                                                         name="resto_tax_account_id"
                                                         id="resto_tax_account_id">
                                                         <option value="">Select Sale Tax Account</option>
-                                                        @foreach (getAccountByType(9) as $sc)
-                                                            @if(!empty($result))
-                                                                @if($sc->id == $result['resto_tax_account_id'])
-                                                                    <option value="{{ $sc->id }}" selected>{{ $sc->accountFull }}</option>
-                                                                @else
-                                                                    <option value="{{ $sc->id }}">{{ $sc->accountFull }}</option>
-                                                                @endif
-                                                            @else
-                                                            <option value="{{ $sc->id }}">{{ $sc->accountFull }}</option>
-                                                            @endif
-                                                        @endforeach
+
                                                     </select>
                                                 </div>
                                             </div>

@@ -32,7 +32,7 @@ class CompanyController extends Controller
         }else{
             $title = 'Company Profile';
         }
-        return view('settings.company.index',compact('result','title','default'));
+        return view('settings.company.index',compact('result','title'));
     }
 
     public function store(Request $request)
