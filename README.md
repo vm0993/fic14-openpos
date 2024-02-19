@@ -35,19 +35,18 @@ Feel free to contact me. EFS
 
 openPOS Dashboard Preparation
 <p align="center">
-    <a href="https://myposku.id" target="_blank"><img src="https://github.com/vm0993/fic14-openpos/blob/main/openPosDashboard.png" width="400" alt="Dashboard"></a>
-    <a href="https://myposku.id" target="_blank"><img src="https://github.com/vm0993/fic14-openpos/blob/main/openPosReport1.png" width="400" alt="Report1"></a>
+    <a href="https://myposku.id" target="_blank"><img src="https://github.com/vm0993/fic14-openpos/blob/main/openPosDashboard.png" width="600" alt="Dashboard"></a>
+    <a href="https://myposku.id" target="_blank"><img src="https://github.com/vm0993/fic14-openpos/blob/main/openPosReport1.png" width="600" alt="Report1"></a>
 </p>
 <p align="center">
     openPOS Dashboard & Draft Report
 </p>
-<p align="center"><a href="https://myposku.id" target="_blank"><img src="https://github.com/vm0993/fic14-openpos/blob/main/openPosReport2.png" width="400" alt="Report1"></a></p>
 <p align="center">
-    openPOS Draft Report 2
+    <a href="https://myposku.id" target="_blank"><img src="https://github.com/vm0993/fic14-openpos/blob/main/openPosReport2.png" width="600" alt="Report1"></a>
+    <a href="https://myposku.id" target="_blank"><img src="https://github.com/vm0993/fic14-openpos/blob/main/openPosReport3.png" width="600" alt="Report1"></a>
 </p>
-<p align="center"><a href="https://myposku.id" target="_blank"><img src="https://github.com/vm0993/fic14-openpos/blob/main/openPosReport3.png" width="400" alt="Report1"></a></p>
 <p align="center">
-    openPOS Draft Report 3
+    openPOS Draft Report 2 & 3
 </p>
 
 ## Feature
