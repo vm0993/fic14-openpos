@@ -25,6 +25,12 @@ Step by step
 
 openPOS is open source POS and integrated accounting apps and Mobile App, will be host at https://myposku.id 
 
+For Demo please check in https://demo.myposku.id 
+Email Login : demo@myposku.id
+Password    : password
+
+Some feature in demo apps may be different and not function with this repository.
+
 Feel free to contact me. EFS
 
 ## Feature
