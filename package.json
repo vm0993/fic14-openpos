@@ -57,7 +57,7 @@
         "autoprefixer": "10.4.5",
         "axios": "^1.6.0",
         "bootstrap": "^5.2.3",
-        "browser-sync": "^2.27.7",
+        "browser-sync": "^3.0.2",
         "browser-sync-webpack-plugin": "^2.3.0",
         "concurrently": "^7.0.0",
         "laravel-mix": "^6.0.39",
